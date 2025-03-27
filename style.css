@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Hammersmith One';
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Centraliza a navegação */
+    padding: 10px 30px;
+}
+
+header nav {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin-top: 5px;
+    align-items: center; /* Alinha os itens no centro verticalmente */
+}
+
+header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #5E00FF;
+}
+
+/* Responsividade: Quando a largura da tela for menor que 1000px */
+@media (max-width: 1000px) {
+    header {
+        padding: 10px 20px; /* Ajusta o padding para telas menores */
+    }
+
+    header nav {
+        gap: 15px; /* Diminui o espaçamento entre os itens */
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+    }
+
+    header nav a {
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+    }
+}
+
+/* Responsividade: Quando a largura da tela for menor que 600px */
+@media (max-width: 300px) {
+    header {
+        padding: 10px 15px; /* Ajusta ainda mais o padding em telas muito pequenas */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+    }
+
+    header nav {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        gap: 10px; /* Ajusta o espaço entre os itens */
+    }
+}
+
+/*Body*/
+
+body {
+    background-color: #2D2D2D;
+}
+
+/*Apresentacao*/
+
+/*Div da Apresentação*/
+.apr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.txtapr {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+/*Estilização e espaçamento dos textos*/
+.txtapr p, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.apr p {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.apr h1{
+    color: #5E00FF;
+    font-size:50px
+}
+/*Ajuste e estilizações dos botões*/
+.apr .btn {
+    background-color: #000;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    width: 25%;
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+.apr .btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.apr .btn span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.apr .btn:hover {
+    background-color: #5E00FF;
+}
+
+.aprimg {
+    width: 340px;
+    height: 340px;
+    margin-top: 65px;
+    border:16px solid #2D2D2D;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px #5E00FF;
+}
+
+/*Sobre mim*/
+
+
+/*Projetos*/
+
+
+/*Contato*/
+
