@@ -396,3 +396,104 @@ body {
 
 /*Contato*/
 
+.contato {
+    background-color: #000;
+    margin-top: 3%;
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;        
+    justify-content: center;    
+    padding: 20px;              
+    text-align: center;        
+    gap: 10px
+}
+
+.contato h1 {
+    margin-bottom: 20px;
+}
+
+.contato textarea {
+    padding: 10px;
+    height: 225px;
+    width: 40%;
+    resize: none;
+    border-radius: 10px;
+}
+
+.contato input {
+    padding: 10px;
+    height: 40px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.contato button {
+    background-color: #5E00FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contato button:hover{
+    background-color: #FFFFFF;
+    color: #5E00FF;
+}
+
+@media (max-width: 768px) {
+    .contato textarea, 
+    .contato input {
+        width: 50%; /* Ocupa mais espaço em telas menores */
+    }
+}
+
+footer {
+    background-color: #5E00FF;;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px 30px;
+    gap: 10px;
+}
+
+footer img {
+    width: 25px;
+    height: 25px;
+}
+
+footer p {
+    color: #FFFFFF;
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 15px; /* Ajusta o espaçamento */
+    }
+}
+
+#btnTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    color: #3A00B5;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Ocultar por padrão */
+    transition: opacity 0.3s ease-in-out;
+}
+
+#btnTopo:hover {
+    background-color: #d3d3d3;
+}
+
+
+

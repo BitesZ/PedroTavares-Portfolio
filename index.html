@@ -9,12 +9,13 @@
 </head>
 <body>
     <!--Header-->
+    <section id="home"></section>
     <header>
         <nav>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre mim</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#projeto">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </nav>
     </header>
 
@@ -24,13 +25,13 @@
             <p>Olá, eu sou</p>
             <h1>Pedro Tavares</h1>
             <p>Desenvolvedor Fullstack com Especialidade em Java, Kotlin, Html e CSS.</p>
-            <a href="https://www.linkedin.com/in/pedro-tavares-260759265/" class="btn"><img src="img/icon-linkedin.png">Linkedin</a>
-            <a href="https://github.com/BitesZ" class="btn"><img src="img/icon-github.png">Github</a>
+            <a href="https://www.linkedin.com/in/pedro-tavares-260759265/" target="_blank" class="btn"><img src="img/icon-linkedin.png">Linkedin</a>
+            <a href="https://github.com/BitesZ" target="_blank" class="btn"><img src="img/icon-github.png">Github</a>
         </div>
         <img src="img/pfp.png" class="aprimg">
     </div>
-
     <!--Sobre mim-->
+    <section id="sobre">
     <div class="sobre">
         <h1>Sobre Mim</h1>
         <div class="txt">
@@ -50,11 +51,12 @@
                 <p style="background-color: #0067ED;">TRELLO</p>
             </div>
             <p>Com essas habilidades, desenvolvo páginas web, aplicações para desktop e dispositivos móveis eficientes, além de estruturar e gerenciar bancos de dados SQL e NoSQL. Tenho experiência em versionamento de código, prototipação de interfaces e trabalho com metodologias ágeis como Scrum para garantir processos organizados e produtivos.</p>
-            <a href="https://github.com/BitesZ" class="btn"><img src="img/icon-down.png">Baixar Currículo</a>
+            <a href="https://drive.google.com/file/d/1AUWVT9-xmQuCLfoV0PUbVx1HqQ2TB5z5/view?usp=sharing" target="_blank" class="btn"><img src="img/icon-down.png">Baixar Currículo</a>
         </div>
     </div>
-
+    </section>
     <!--Projetos-->
+    <section id="projeto"></section>
     <div>
         <div class="project-title">
             <h1>Projetos</h1>
@@ -70,8 +72,38 @@
     </div>
 
     <!--Contate-me-->
-    <div>
-
+    <section id="contato">
+    <div class="contato">
+        <h1>Contate-me</h1>
+        <input type="text" name="nome" placeholder="Nome">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="subject" placeholder="Assunto">
+        <textarea name="msg" placeholder="Mensagem"></textarea>
+        <button>Enviar</button>
     </div>
+    <footer>
+        <div class="footer-item">
+            <img src="img/icon-whatsapp.png"><p>+55 (13) 996874594</p>
+        </div>
+        <div class="footer-item">
+            <img src="img/icon-email.png"><p>pedroricardost040502@gmail.com</p>
+        </div>
+        <p style="font-size: 10px; align-self: center;">© 2025 Pedro Ricardo da Silva Tavares</p>
+    </footer>
+</section>
+<button id="btnTopo" onclick="voltarAoTopo()">↑</button>
+<script>
+    window.onscroll = function() { 
+        let btn = document.getElementById("btnTopo");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+    function voltarAoTopo() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
 </body>
 </html>
