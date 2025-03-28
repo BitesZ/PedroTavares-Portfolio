@@ -1,13 +1,15 @@
 * {
     box-sizing: border-box;
     font-family: 'Hammersmith One';
+    margin: 0;
+    padding: 0;
 }
 
 /* Header */
 header {
     width: 100%;
     display: flex;
-    justify-content: flex-start; /* Centraliza a navegação */
+    justify-content: flex-start; 
     padding: 10px 30px;
 }
 
@@ -16,7 +18,7 @@ header nav {
     gap: 25px;
     list-style: none;
     margin-top: 5px;
-    align-items: center; /* Alinha os itens no centro verticalmente */
+    align-items: center; 
 }
 
 header nav a {
@@ -29,34 +31,33 @@ header nav a:hover {
     color: #5E00FF;
 }
 
-/* Responsividade: Quando a largura da tela for menor que 1000px */
+
 @media (max-width: 1000px) {
     header {
-        padding: 10px 20px; /* Ajusta o padding para telas menores */
+        padding: 10px 20px;
     }
 
     header nav {
-        gap: 15px; /* Diminui o espaçamento entre os itens */
-        font-size: 16px; /* Ajusta o tamanho da fonte */
-        justify-content: center; /* Centraliza os itens horizontalmente */
-        flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+        gap: 15px;
+        font-size: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     header nav a {
-        font-size: 16px; /* Ajusta o tamanho da fonte */
+        font-size: 16px;
     }
 }
 
-/* Responsividade: Quando a largura da tela for menor que 600px */
+
 @media (max-width: 300px) {
     header {
-        padding: 10px 15px; /* Ajusta ainda mais o padding em telas muito pequenas */
-        justify-content: center; /* Centraliza os itens horizontalmente */
+        padding: 10px 15px;
+        justify-content: center; 
     }
 
     header nav {
-        flex-direction: column; /* Empilha os itens verticalmente */
-        gap: 10px; /* Ajusta o espaço entre os itens */
+        gap: 20px; 
     }
 }
 
@@ -74,6 +75,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 100px;
+    flex-wrap: wrap;
 }
 
 .txtapr {
@@ -141,11 +143,256 @@ body {
     box-shadow: 0 0 0 6px #5E00FF;
 }
 
-/*Sobre mim*/
+@media (max-width: 1024px) {
+    .apr {
+        gap: 50px;
+        margin-top: 10%;
+    }
 
+    .txtapr {
+        width: 40%;
+    }
+
+    .aprimg {
+        width: 300px;
+        height: 300px;
+    }
+
+    .apr .btn {
+        width: 30%;
+    }
+
+    .apr p {
+        font-size: 25px;
+    }
+
+    .apr h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .apr {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .txtapr {
+        width: 80%;
+    }
+
+    .aprimg {
+        width: 250px;
+        height: 250px;
+    }
+
+    .apr .btn {
+        width: 30%;
+    }
+
+    .apr p {
+        font-size: 22px;
+    }
+
+    .apr h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .apr {
+        margin-top: 15%;
+        gap: 15px;
+    }
+
+    .txtapr {
+        width: 90%;
+    }
+
+    .aprimg {
+        width: 220px;
+        height: 220px;
+    }
+
+    .apr .btn {
+        width: 30%;
+        font-size: 9px;
+    }
+
+    .apr .btn img {
+        width: 30%;
+        height: 30%;
+        font-size: 12px;
+    }
+
+    .apr p {
+        font-size: 20px;
+    }
+
+    .apr h1 {
+        font-size: 30px;
+    }
+}
+
+/*Sobre mim*/
+.sobre {
+    background-color: #000;
+    margin-top: 3%;
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;        
+    justify-content: center;    
+    padding: 20px;              
+    text-align: center;        
+}
+
+.sobre p, h1 {
+    color: #FFFFFF;
+}
+
+.sobre .btn{
+    background-color: #2D2D2D;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    width: 13%;
+    margin-top: 10px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.sobre .btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.sobre .btn span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sobre .btn:hover {
+    background-color:#5E00FF;
+}
+
+.sobre .txt p {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto; 
+    font-size: 24px;
+    margin-top: 2%;
+}
+
+.sobre .txt .tags {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que as tags quebrem para a linha seguinte quando não houver espaço */
+    gap: 0px;  /* Espaçamento entre as tags */
+    margin-top: 20px;
+    width: 46%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.sobre .txt .tags p {
+    color: white;
+    padding: 3px 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 0 1 auto;  /* Permite que as tags se ajustem de acordo com o conteúdo */
+    min-width: 90px;  /* Largura mínima para cada tag */
+    width: auto;  /* As tags podem se ajustar automaticamente */
+}
+
+@media (max-width: 800px) {
+    .sobre .txt p {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .sobre .btn {
+        width: 110px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre .txt p {
+        width: 100%;
+    }
+    .sobre .btn {
+        width: 150px;
+    }
+    .sobre .txt .tags p {
+        min-width: 70px;  /* Largura mínima ainda mais reduzida */
+        padding: 4px 8px;  /* Ajusta o padding para telas pequenas */
+    }
+}
 
 /*Projetos*/
+.project-title {
+    margin-top: 1%;
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;        
+    justify-content: center;    
+    padding: 5px;          
+    text-align: center; 
+}
 
+.project-title p {
+    color: #FFFFFF;
+    
+}
+
+.project-container {
+    display: flex;                  /* Usando flexbox para alinhar os itens */
+    flex-wrap: wrap;                /* Permite que as caixas quebrem para a próxima linha quando não houver espaço */
+    justify-content: flex-start;    /* Alinha as caixas à esquerda */
+    gap: 20px;                      /* Espaçamento entre as caixas */
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.project-box {
+    width: 275px;
+    height: 275px;
+    padding: 20px;
+    border: 2px;
+    border-radius: 20px;
+    background-color: #5E00FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    flex-shrink: 0;                 /* Impede que a caixa encolha */
+}
+
+.project-box img {
+    border-radius: 10px;
+    width: 220px;
+    height: 120px;
+}
+
+.project-box p, h3 {
+    color: #FFFFFF;
+}
 
 /*Contato*/
 
