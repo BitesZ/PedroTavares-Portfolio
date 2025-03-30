@@ -381,7 +381,10 @@ body {
     align-items: center;
     text-align: center;
     gap: 5px;
-    flex-shrink: 0;                 /* Impede que a caixa encolha */
+    flex-shrink: 0; 
+    cursor: pointer;
+    transition: 0.3s;
+    color: #FFFFFF;
 }
 
 .project-box img {
@@ -390,8 +393,68 @@ body {
     height: 120px;
 }
 
-.project-box p, h3 {
+
+.project-box:hover {
+    color: #5E00FF;
+    background-color: #FFFFFF; /* Efeito de hover */
+    transform: scale(1.08);
+}
+
+/*Popup Projeto*/
+.popup {
+    display:none;
+    position: fixed;
+    z-index: 1; /* Fica acima do conteúdo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Permite rolar o conteúdo */
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo do popup */
+}
+
+.popup-content {
+    background-color: #5E00FF;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%; /* Largura do modal */
+    max-width: 900px; /* Limita a largura */
+    height: 80%;
+    max-height: 700px;
+    border-radius: 15px;
+}
+
+.popup-content .btnClose {
+    cursor: pointer;
+}
+
+.popup-content p, h2 {
     color: #FFFFFF;
+}
+
+.popup-content .tags {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que as tags quebrem para a linha seguinte quando não houver espaço */
+    gap: 13px;  /* Espaçamento entre as tags */
+    margin-top: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popup-content .tags p {
+    color: white;
+    padding: 3px 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 5%;
+    text-align: center;
+    flex: 0 1 auto;  /* Permite que as tags se ajustem de acordo com o conteúdo */
+    min-width: 60px;  /* Largura mínima para cada tag */
+    width: auto;  /* As tags podem se ajustar automaticamente */
 }
 
 /*Contato*/

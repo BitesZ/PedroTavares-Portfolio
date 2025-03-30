@@ -63,10 +63,36 @@
             <p>Aqui você vai conferir projetos no qual participei</p>
         </div>
         <div class="project-container">  
-            <div class="project-box">
+            <div class="project-box" onclick="openPopup('popup1')">
                 <img src="img/img-prj1.png">
                 <h3>(Meu Site) - Portfólio</h3>
                 <p>O intuito deste projeto é destacar minhas habilidades e conquistas, com o objetivo de despertar o interesse do público pelo meu trabalho.</p>
+            </div>
+        </div>
+    </div>
+    <!--Popups Projeto-->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <img src="img/icon-close.png" onclick="closePopup('popup1')" class="btnClose">
+            <h2 class="color">(Meu Site) - Portfólio</h2>
+            <img src="img/img-prj1.png">
+            <p class="color">Tecnologias Utilizadas:</p>
+            <p class="descr">Este site foi feito para que eu pudesse
+                mostrar meus projetos e habilidades,
+                durante seu desenvolvimento, foi feita
+                a prototipação pelo FIGMA, e então sua
+                estruturação com HTML e estilização
+                com CSS, foram feitas algumas
+                funcionalidades como o envio de email e pop-ups com um pouco de JavaScript,
+                ao longo do seu desenvolvimento
+                também foi criado um repositório no git
+                e feito versionamento do projeto.</p>
+            <div class="tags">
+                <p style="background-color: #FF6A00;">HTML</p>
+                <p style="background-color: #0077FF;">CSS</p>
+                <p style="background-color: #FF2600;">JAVA</p>
+                <p style="background-color: #383838;">Git/Github</p>
+                <p style="background-color: #929292;">FIGMA</p>
             </div>
         </div>
     </div>
@@ -80,6 +106,7 @@
         <input type="text" name="subject" placeholder="Assunto">
         <textarea name="msg" placeholder="Mensagem"></textarea>
         <button>Enviar</button>
+        
     </div>
     <footer>
         <div class="footer-item">
@@ -92,18 +119,6 @@
     </footer>
 </section>
 <button id="btnTopo" onclick="voltarAoTopo()">↑</button>
-<script>
-    window.onscroll = function() { 
-        let btn = document.getElementById("btnTopo");
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            btn.style.display = "block";
-        } else {
-            btn.style.display = "none";
-        }
-    };
-    function voltarAoTopo() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-</script>
+<script src="script.js"></script>
 </body>
 </html>
