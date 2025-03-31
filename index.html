@@ -64,36 +64,49 @@
         </div>
         <div class="project-container">  
             <div class="project-box" onclick="openPopup('popup1')">
-                <img src="img/img-prj1.png">
+                <img src="img/projects/portfolio/img-prj1.png">
                 <h3>(Meu Site) - Portfólio</h3>
                 <p>O intuito deste projeto é destacar minhas habilidades e conquistas, com o objetivo de despertar o interesse do público pelo meu trabalho.</p>
             </div>
         </div>
     </div>
     <!--Popups Projeto-->
+    <!--Popup-->
     <div id="popup1" class="popup">
         <div class="popup-content">
-            <img src="img/icon-close.png" onclick="closePopup('popup1')" class="btnClose">
-            <h2 class="color">(Meu Site) - Portfólio</h2>
-            <img src="img/img-prj1.png">
-            <p class="color">Tecnologias Utilizadas:</p>
-            <p class="descr">Este site foi feito para que eu pudesse
+            <div>
+                <h2 class="color" style="margin-bottom: 30px;">(Meu Site) - Portfólio</h2>
+                <div class="preview-container">
+                    <img src="img/icon-arrow.png" class="popup-arrow-left" onclick="prevImg('popup1')">
+                    <img id="imgs-prj1" src="img/projects/portfolio/img-prj1.png" class="preview">
+                    <img src="img/icon-arrow.png" class="popup-arrow-right" onclick="nextImg('popup1')">
+                </div>
+                <div class="space">
+                    <p class="color">Tecnologias Utilizadas:</p>
+                    <div class="tags">
+                        <p style="background-color: #FF6A00;">HTML</p>
+                        <p style="background-color: #0077FF;">CSS</p>
+                        <p style="background-color: #FF2600;">JAVASCRIPT</p>
+                        <p style="background-color: #383838;">Git/Github</p>
+                        <p style="background-color: #929292;">FIGMA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="descr">
+                <p>Este site foi feito para que eu pudesse
                 mostrar meus projetos e habilidades,
                 durante seu desenvolvimento, foi feita
                 a prototipação pelo FIGMA, e então sua
                 estruturação com HTML e estilização
                 com CSS, foram feitas algumas
                 funcionalidades como o envio de email e pop-ups com um pouco de JavaScript,
-                ao longo do seu desenvolvimento
+                ao longo do seu desenvolvim ento
                 também foi criado um repositório no git
-                e feito versionamento do projeto.</p>
-            <div class="tags">
-                <p style="background-color: #FF6A00;">HTML</p>
-                <p style="background-color: #0077FF;">CSS</p>
-                <p style="background-color: #FF2600;">JAVA</p>
-                <p style="background-color: #383838;">Git/Github</p>
-                <p style="background-color: #929292;">FIGMA</p>
+                e feito versionamento do projeto.
+                </p>
+                <a href="https://github.com/BitesZ/PedroTavares-Portfolio" class="btn" target="_blank"><img src="img/icon-github.png">Link para repositório</a>
             </div>
+            <img src="img/icon-close.png" onclick="closePopup('popup1')" class="btnClose">
         </div>
     </div>
 
