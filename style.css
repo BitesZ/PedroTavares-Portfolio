@@ -534,12 +534,156 @@ body {
     color: #5E00FF;
 }
 
+@media (max-width: 1200px) {
+    
+    .popup-content .descr {
+        font-size: 15px;
+        width: 100%;
+    }
+    .popup-content .preview-container .preview {
+        width: 275px;
+        height: 145px;
+    }
+
+}
+
 @media (max-width: 800px) {
     .popup-content{
         flex-wrap: wrap;
         width: 90%;
+        gap: 10px
+    }
+    .popup-content .preview-container .preview {
+        width: 365px;
+        height: 185px;
+    }
+    .popup-content .tags {
+            display: flex;
+            flex-wrap: wrap;  /* Permite que as tags quebrem para a linha seguinte quando não houver espaço */
+            gap: 7px;  /* Espaçamento entre as tags */
+            margin-top: 10px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    .popup-content .tags p {
+        padding: 3px 5px;
+        font-size: 10px;
+        width: 2%;
+        max-width: 23%;
+        width: auto;
+    }
+    .popup-content .space {
+        margin-top: 20px;
+    }
+    .popup-content .descr {
+        font-size: 13px;
+        width: 100%;
+    }
+    .popup-content .btn {
+        font-size: 10px;
+        cursor: pointer;
+        width: 35%;
+        max-height: 30px;
+        margin-top: 5px;
+    }
+    .popup-content .btn img {
+        width: 20px;
+        height: 20px;
     }
 }
+@media (max-width: 800px) {
+    .popup-content{
+        flex-wrap: wrap;
+        width: 90%;
+        gap: 10px
+    }
+    .popup-content .preview-container .preview {
+        width: 365px;
+        height: 185px;
+    }
+    .popup-content .tags {
+            display: flex;
+            flex-wrap: wrap;  /* Permite que as tags quebrem para a linha seguinte quando não houver espaço */
+            gap: 7px;  /* Espaçamento entre as tags */
+            margin-top: 10px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    .popup-content .tags p {
+        padding: 3px 5px;
+        font-size: 10px;
+        width: 2%;
+        max-width: 23%;
+        width: auto;
+    }
+    .popup-content .space {
+        margin-top: 20px;
+    }
+    .popup-content .descr {
+        font-size: 13px;
+        width: 100%;
+    }
+    .popup-content .btn {
+        font-size: 10px;
+        cursor: pointer;
+        width: 35%;
+        max-height: 30px;
+        margin-top: 5px;
+    }
+    .popup-content .btn img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .popup-content{
+        flex-wrap: wrap;
+        width: 90%;
+        gap: 10px
+    }
+    .popup-content .preview-container .preview {
+        width: 165px;
+        height: 100px;
+    }
+    .popup-content .tags {
+            display: flex;
+            flex-wrap: wrap;  /* Permite que as tags quebrem para a linha seguinte quando não houver espaço */
+            gap: 7px;  /* Espaçamento entre as tags */
+            margin-top: 10px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    .popup-content .tags p {
+        padding: 3px 5px;
+        font-size: 10px;
+        width: 2%;
+        max-width: 23%;
+        width: auto;
+    }
+    .popup-content .space {
+        margin-top: 20px;
+    }
+    .popup-content .descr {
+        font-size: 12px;
+        width: 100%;
+    }
+    .popup-content .btn {
+        font-size: 10px;
+        cursor: pointer;
+        width: 60%;
+        max-height: 45px;
+        margin-top: 5px;
+    }
+    .popup-content .btn img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 
 /*Contato*/
 
@@ -588,6 +732,11 @@ body {
 .contato button:hover{
     background-color: #FFFFFF;
     color: #5E00FF;
+}
+
+.contato label {
+    color: #FFFFFF;
+    width: 50%;
 }
 
 @media (max-width: 768px) {

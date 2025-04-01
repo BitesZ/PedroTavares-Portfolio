@@ -112,15 +112,18 @@
 
     <!--Contate-me-->
     <section id="contato">
-    <div class="contato">
-        <h1>Contate-me</h1>
-        <input type="text" name="nome" placeholder="Nome">
-        <input type="text" name="email" placeholder="E-mail">
-        <input type="text" name="subject" placeholder="Assunto">
-        <textarea name="msg" placeholder="Mensagem"></textarea>
-        <button>Enviar</button>
         
-    </div>
+    <form action="https://formspree.io/f/movekadb" method="POST">
+        <div class="contato">
+            <h1>Contate-me</h1>
+                <input type="text" name="name" placeholder="Nome">
+                <input type="text" name="email" placeholder="E-mail">
+                <input type="text" name="subject" placeholder="Assunto">
+                <textarea name="message" placeholder="Mensagem"></textarea>
+                <label>Anexar Arquivo:<input type="file" name="upload"></label>
+                <button type="submit">Enviar</button>
+        </div>
+    </form>
     <footer>
         <div class="footer-item">
             <img src="img/icon-whatsapp.png"><p>+55 (13) 996874594</p>
