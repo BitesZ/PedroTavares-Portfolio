@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Ricardo | Desenvolvedor de Software</title>
+    <title>Pedro Tavares | Desenvolvedor de Software</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
 </head>
@@ -120,10 +120,18 @@
                 <input type="text" name="email" placeholder="E-mail">
                 <input type="text" name="subject" placeholder="Assunto">
                 <textarea name="message" placeholder="Mensagem"></textarea>
-                <label>Anexar Arquivo:<input type="file" name="upload"></label>
                 <button type="submit">Enviar</button>
         </div>
     </form>
+    <div id="popup-done"class="popup-done">
+        <div class="popup-content">
+            <div>
+                <img src="img/icon-check.png">
+                <p>Mensagem Enviada com sucesso.</p>
+                <img src="img/icon-close.png" onclick="closePopup('popup-done')" class="btnClose">
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="footer-item">
             <img src="img/icon-whatsapp.png"><p>+55 (13) 996874594</p>
